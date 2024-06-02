@@ -1,2 +1,2 @@
 # Wali Mohammad Abdullah's Portfolio
-## Date updated: November 2023
+## Date updated: June 2024
