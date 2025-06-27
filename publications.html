@@ -39,92 +39,101 @@
 									<header class="major">
 										<h2>Selected Publications</h2>
 									</header>
-									<div class="posts">
-										<article>
-											<h3>Efficient Calculation of Triangle Centrality in Big Data Networks</h3>
-											<p> 
-												<ul>
-													<li> The notion of “centrality” within graph analytics has led to the creation of well-known metrics such as Google's Page Rank [1], which is an extension of eigenvector centrality [2]. </li>
-													<li> Triangle centrality is a related metric [3] that utilizes the presence of triangles, which play an important role in network analysis, to quantitatively determine the relative “importance” of a node in a network. Efficiently counting and enumerating these triangles are a major backbone to understanding network characteristics, and linear algebraic methods have utilized the correspondence between sparse adjacency matrices and graphs to perform such calculations, with sparse matrix-matrix multiplication as the main computational kernel. </li>
-													<li> In this paper, we use an intersection representation of graph data implemented as a sparse matrix, and engineer an algorithm to compute the triangle centrality of each vertex within a graph. </li>
-													<li> The main computational task of calculating these sparse matrix-vector products is carefully crafted by employing compressed vectors as accumulators. As with other state-of-the-art algorithms [4], our method avoids redundant work by counting and enumerating each triangle exactly once. We present results from extensive computational experiments on large-scale real-world and synthetic graph in-stances that demonstrate good scalability of our method. </li>
-													<li> We also present a shared memory parallel implementation of our algorithm.	</li>
-												</ul>
-											</p>
-											<ul class="actions">
-												<li><a href="https://ieeexplore.ieee.org/document/9926324" class="button">Read More</a></li>
-											</ul>
+									<!-- <div class="posts"> -->
+									<div class="posts" style="display: block;"></div>
+
+										<article class="publication">
+										  <ul>
+											<li>
+											  <strong>
+												<a href="https://doi.org/10.1145/3663529.3663849" target="_blank">
+												  Rethinking Software Engineering in the Era of Foundation Models
+												</a>
+											  </strong>
+											  [ <a href="https://doi.org/10.1145/3663529.3663849" target="_blank">🔗 link</a> |
+												<a href="https://waliabdullah.github.io/papers/fse2024_hassan.pdf" target="_blank">📄 pdf</a> ]
+											  <br>
+											  Ahmed E. Hassan, Dayi Lin, Gopi Krishnan Rajbahadur, K Gallaba, Filipe Cogo, Boyuan Chen, Haoxiang Zhang, Kishanthan Thangarajah, Gustavo Oliva, Jiahuei (Justina) Lin, <strong>Wali Mohammad Abdullah</strong>, Zhen Ming (Jack) Jiang
+											  <br>
+											  <em>In Companion Proceedings of the International Conference on the Foundations of Software Engineering (FSE)</em>, pp. 294–305, 2024
+											</li>
+										  </ul>
 										</article>
-										<article>
-											<h3>A Sparse Matrix Approach for Covering Large Complex Networks by Cliques</h3>
-											<p>
-												<ul>
-													<li> A classical NP-hard problem is the Minimum Edge Clique Cover (minECC) problem, which is concerned with covering the edges of a network (graph) with the minimum number of cliques. </li>
-													<li> There are many real-life applications of this problem, such as in food science, computational biology, efficient representation of pairwise information, and so on. </li>
-													<li> Borrowing ideas from [8], we propose using a compact representation, the intersection representation, of network data and design an efficient and scalable algorithm for minECC. </li>
-													<li> Edges are considered for inclusion in cliques in degree-based orders during the clique construction step. </li>
-													<li> The intersection representation of the input graph enabled efficient computer implementation of the algorithm by utilizing an existing sparse matrix package [11]. </li>
-													<li> We present results from numerical experiments on a representative set of real-world and synthetically constructed benchmark graph instances. </li>
-													<li> Our algorithm significantly outperforms the current state-of-the-art heuristic algorithm of [4] in terms of the quality of the edge clique covers returned and running time performance on the benchmark test instances. </li>
-													<li> On some of the largest graph instances whilst existing heuristics failed to terminate, our algorithm could finish the computation within a reasonable amount of time.</li>
-												</ul>
-											</p>
-											<ul class="actions">
-												<li><a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_43" class="button"> Read More</a></li>
-											</ul>
+									  
+										<article class="publication">
+										  <ul>
+											<li>
+											  <strong>
+												<a href="https://doi.org/10.1109/HPEC55821.2022.9926324" target="_blank">
+												  Efficient Calculation of Triangle Centrality in Big Data Networks
+												</a>
+											  </strong>
+											  [ <a href="https://doi.org/10.1109/HPEC55821.2022.9926324" target="_blank">🔗 link</a> |
+												<a href="https://waliabdullah.github.io/papers/hpec2022_abdullah.pdf" target="_blank">📄 pdf</a> ]
+											  <br>
+											  <strong>Wali Mohammad Abdullah</strong>, David Awosoga, and Shahadat Hossain
+											  <br>
+											  <em>In 2022 IEEE High Performance Extreme Computing Conference (HPEC), Waltham, MA, USA</em>, pp. 1–7, 2022
+											</li>
+										  </ul>
 										</article>
-										<article>
-											<h3>Intersection Representation of Big Data Networks and Triangle Enumeration</h3>
-											<p>
-												<ul>
-													<li> Triangles are an essential part of network analysis, representing metrics such as transitivity and clustering coefficient. </li>
-													<li> Using the correspondence between sparse adjacency matrices and graphs, linear algebraic methods have been developed for triangle counting and enumeration, where the main computational kernel is sparse matrix-matrix multiplication. </li>
-													<li> In this paper, we use an intersection representation of graph data implemented as a sparse matrix, and engineer an algorithm to compute the “k-count” distribution of the triangles of the graph. </li>
-													<li> The main computational task of computing sparse matrix-vector products is carefully crafted by employing compressed vectors as accumulators. </li>
-													<li> Our method avoids redundant work by counting and enumerating each triangle exactly once. </li>
-													<li> We present results from extensive computational experiments on large-scale real-world and synthetic graph instances that demonstrate good scalability of our method. </li>
-													<li> In terms of run-time performance, our algorithm has been found to be orders of magnitude faster than the reference implementations of the miniTri data analytics application [18]. </li>
-												</ul>
-											</p>
-											<ul class="actions">
-												<li><a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_34" class="button">Read More</a></li>
+
+										<article class="publication">
+											<ul>
+											  <li>
+												<strong>
+												  <a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_43" target="_blank">
+													A Sparse Matrix Approach for Covering Large Complex Networks by Cliques
+												  </a>
+												</strong>
+												[ <a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_43" target="_blank">🔗 link</a> |
+												  <a href="https://waliabdullah.github.io/papers/iccs2022_abdullah_clique.pdf" target="_blank">📄 pdf</a> ]
+												<br>
+												<strong>Wali Mohammad Abdullah</strong>, and Shahadat Hossain
+												<br>
+												<em>In International Conference on Computational Science, pp. 505-517), Cham: Springer International Publishing, 2022.
+											  </li>
 											</ul>
-										</article>
-										<article>
-											<h3>Intersection Representation of Big Data Networks and Triangle Counting</h3>
-											<p>
-												<ul>
-													<li> Triangles are an essential part of network analysis, representing metrics such as transitivity ratio and clustering coefficient because of its diverse applications, enumeration and counting of triangles in large networks has been extensively studied, and continues to draw much interest from many different fields. </li>
-													<li> This has only increased with the introduction of approximate counting, parallel and distributed implementations, and restricted and streaming data access scenarios. </li>
-													<li> We propose a compact and efficient representation of network data based on the intersection of edge labels, and use sparse matrix data structures for its computer implementation. </li>
-													<li> We then present a scalable algorithm that uses this structure to count triangles. </li>
-													<li> On a set of large (the largest with more that 3.6 billion edges) real-world and synthetic networks, our algorithm performs significantly better than the reference implementation miniTri. </li>
-												</ul>		
-											</p>
-											<ul class="actions">
-												<li><a href="https://ieeexplore.ieee.org/abstract/document/9671349" class="button">Read More</a></li>
+										  </article>
+
+										  <article class="publication">
+											<ul>
+											  <li>
+												<strong>
+												  <a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_34" target="_blank">
+													Intersection Representation of Big Data Networks and Triangle Enumeration
+												  </a>
+												</strong>
+												[ <a href="https://link.springer.com/chapter/10.1007/978-3-031-08757-8_34" target="_blank">🔗 link</a> |
+												  <a href="https://waliabdullah.github.io/papers/iccs2022_abdullah_triangle.pdf" target="_blank">📄 pdf</a> ]
+												<br>
+												<strong>Wali Mohammad Abdullah</strong>, David Awosoga, and Shahadat Hossain
+												<br>
+												<em>In International Conference on Computational Science, pp. 413-424), Cham: Springer International Publishing, 2022.
+											  </li>
 											</ul>
+										  </article>
+									  
+										<article class="publication">
+										  <ul>
+											<li>
+											  <strong>
+												<a href="https://doi.org/10.1007/978-3-030-63591-6_11" target="_blank">
+												  Covering Large Complex Networks by Cliques—A Sparse Matrix Approach
+												</a>
+											  </strong>
+											  [ <a href="https://doi.org/10.1007/978-3-030-63591-6_11" target="_blank">🔗 link</a> |
+												<a href="https://waliabdullah.github.io/papers/springer2021_abdullah.pdf" target="_blank">📄 pdf</a> ]
+											  <br>
+											  <strong>Wali Mohammad Abdullah</strong>, Shahadat Hossain, and Muhammad Ali Khan
+											  <br>
+											  <em>Recent Developments in Mathematical, Statistical and Computational Sciences. AMMCS 2019. Springer Proceedings in Mathematics & Statistics, vol. 343</em>, Springer, Cham, 2021
+											</li>
+										  </ul>
 										</article>
-										<article>
-											<h3>Covering Large Complex Networks by Cliques---A Sparse Matrix Approach</h3>
-											<p>
-												<ul>
-													<li> The Edge Clique Cover (ECC) problem is concerned with covering edges of a graph with the minimum number of cliques, which is an NP-hard problem. </li>
-													<li> This work proposes using a compact representation of network data based on sparse matrix data structures. Building upon an existing ECC heuristic due to Kellerman, we proffer adding vertices during the clique-growing step of the algorithm in judiciously chosen degree-based orders. </li>
-													<li> Our vertex-ordered approach produced a smaller clique cover on a set of standard benchmark instances compared to unordered processing. </li>
-												</ul>
-											</p>
-											<ul class="actions">
-												<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-63591-6_11" class="button">Read More</a></li>
-											</ul>
-										</article>
-										<article>
-											<h3>A Sparse Matrix Approach for Covering Large Complex Networks by Cliques</h3>
-											<ul class="actions">
-												<li><a href="http://ctw2020.iasi.cnr.it/wp-content/uploads/2020/08/CTW2020_paper_82_625903.pdf" class="button">Read Details</a></li>
-											</ul>
-										</article>
-									</div>
+									  
+									  </div>
+									  
 								</section>
 
 						</div>
